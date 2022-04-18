@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Istok';
+  src:
+    url('Istok-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Istok';
+  src:
+    url('Istok-Bold.ttf') format('ttf');
+  font-weight: 900;
+  font-style: normal;
+}

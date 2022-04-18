@@ -1,0 +1,12 @@
+.page {
+  min-width: 320px;
+  min-height: 100vmin;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: rgb(17, 21, 27);
+  background-size: auto;
+  font-family: 'Istok', 'Arial', sans-serif;
+  color: beige;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+}

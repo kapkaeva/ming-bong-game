@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ming Bong Game</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header">
+        <a class="logo link" href="#" target="_self"></a>
+      </header>
+
+      <main class="content">
+        <div class="game">
+        
+          <div class="start">
+            <img class="start__content_image"  src="./images/monster.png" alt="Monster">
+            <p class="start__content">Восстал монстр <br>Минг Бонг</p>
+            <p class="start__content">Храбрые борцы с монстрами спешат на помощь!</p>
+            <button class="start__btn" type="button">Начать борьбу!</button>
+          </div>
+
+          <div class="play" id="play__ming-bong">
+            <img class="play__content_image"  src="./images/health-flask.png" alt="Potion">
+            <p class="play__content">Магическое зелье Сардульи</p>
+            <form class="form" name="restoremingbonghealth">
+              <input
+                  type="number"
+                  name="mingbonghealthunits"
+                  placeholder="едениц"
+                  class="form__text form__number_mingbonghealthunits"
+                />
+              <input
+                value="Пополнить здоровье"
+                class="play__submit-btn play__submit-btn_mingbonghealthunits"
+                type="submit"
+              />
+            </form>
+          </div>
+
+          <div class="play" id="play__antimonster">
+            <img class="play__content_image"  src="./images/antimonster.png" alt="Antimonster">
+            <p class="play__content">Разрушительная сила Антимонстропушкаруса</p>
+            <form class="form" name="addantimonsterpowerdamage">
+                <input
+                    type="number"
+                    name="antimonsterdamageunits"
+                    placeholder="еденицы"
+                    class="form__text form__number_antimonsterdamageunits"
+                  />
+                <input
+                  value="Повысить силу"
+                  class="play__submit-btn play__submit-btn_antimonsterdamageunits"
+                  type="submit"
+                />
+            </form>
+          </div>
+
+          <div class="endplay" id="ednplay__message_antimonster-win">
+              <div class="endplay__content endplay__content_antimonster-win">
+                <img class="endplay__content_image"  src="./images/warrior.png" alt="Warrior">
+                <p class="endplay__content_text" id="ednplay__message_antimonster-win">Борцы с монстрами завоевали победу за Х раундов</p>
+              </div>
+              <div class="endplay__content endplay__content_monster-win">
+                <img class="endplay__content_image"  src="./images/monster.png" alt="Monster">
+                <p class="endplay__content_text" id="ednplay__message_monster-win">Минг Бонг поработил мир за Х раундов</p>
+              </div>
+                <p class="endplay__stats_header">Антимонстропушкарус</p>
+              <ul class="endplay__stats">
+                <li class="endplay__stats_item">Макс урон: <div class="endplay__stats_units" id="ednplay__stats_antimonster_max-damage">123</div></li>
+              </ul>
+              <p class="endplay__stats_header">Здоровье Mонстра Минг Бонга</p>
+              <ul class="endplay__stats">
+                <li class="endplay__stats_item">Восстановлено: <div class="endplay__stats_units" id="ednplay__stats_monsterhealth-max-restored">123</div></li>
+                <li class="endplay__stats_item">Минимум: <div class="endplay__stats_units" id="ednplay__stats_monsterhealth-min_units">123</div></li>
+                <li class="endplay__stats_item">Максимум: <div class="endplay__stats_units" id="ednplay__stats_monsterhealth-max-units">123</div></li>
+              </ul>
+              <button class="endplay__startover_btn" type="button">Побороться сначала</button>
+          </div>
+
+          <footer class="footer">
+            <p class="footer__copyright">© Min Bong Game</p>
+          </footer>
+        </div>
+      </main>
+    </div>
+  <script src="./scripts/game.js"></script>
+  </body>
+</html>
