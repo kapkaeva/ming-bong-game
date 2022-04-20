@@ -1,34 +1,27 @@
 @import url(../vendor/normalize.css);
 @import url(../fonts/fonts.css);
 @import url(../blocks/page/page.css);
-@import url(../blocks/link/link.css);
-/* @import url(../blocks/header/header.css);
-@import url(../blocks/logo/logo.css); */
 @import url(../blocks/game/game.css);
-@import url(../blocks/play/play.css);
-@import url(../blocks/play/__submit-btn/play__submit-btn.css);
-@import url(../blocks/play/__container/play__container.css);
-@import url(../blocks/play/__content/play__content.css);
-@import url(../blocks/play/__content/_image/play__content_image.css);
-@import url(../blocks/endplay/endplay.css);
-/* @import url(../blocks/endplay/__submit-btn/endplay__submit-btn.css); */
-@import url(../blocks/endplay/__content/endplay__content.css);
-@import url(../blocks/endplay/__content/_image/endplay__content_image.css);
-@import url(../blocks/endplay/__stats/_header/endplay__stats_header.css);
-@import url(../blocks/endplay/__stats/_item/endplay__stats_item.css);
-@import url(../blocks/endplay/__stats/_units/endplay__stats_units.css);
-@import url(../blocks/hidden/hidden.css);
 @import url(../blocks/start/start.css);
 @import url(../blocks/start/__btn/start__btn.css);
 @import url(../blocks/start/__content/start__content.css);
 @import url(../blocks/start/__content/_image/start__content_image.css);
+@import url(../blocks/play/play.css);
+@import url(../blocks/play/__content/play__content.css);
+@import url(../blocks/play/__content/_image/play__content_image.css);
+@import url(../blocks/play/__content/_text-monsterhealth/play__content_text-monsterhealth.css);
+@import url(../blocks/play/__submit-btn/play__submit-btn.css);
 @import url(../blocks/endplay/endplay.css);
-@import url(../blocks/endplay/__startover/_btn/endplay__startover_btn.css);
 @import url(../blocks/endplay/__content/endplay__content.css);
+@import url(../blocks/endplay/__content/_image/endplay__content_image.css);
+@import url(../blocks/endplay/__content/_text/endplay__content_text.css);
+@import url(../blocks/endplay/__stats/_header/endplay__stats_header.css);
+@import url(../blocks/endplay/__stats/_item/endplay__stats_item.css);
+@import url(../blocks/endplay/__stats/_units/endplay__stats_units.css);
 @import url(../blocks/endplay/__stats/endplay__stats.css);
-
+@import url(../blocks/endplay/__startover/_btn/endplay__startover_btn.css);
 @import url(../blocks/form/form.css);
 @import url(../blocks/form/__edit-profile/form__edit-profile.css);
 @import url(../blocks/form/__text/form__text.css);
 @import url(../blocks/footer/footer.css);
-@import url(../blocks/footer/__copyright/footer__copyright.css);
+@import url(../blocks/hidden/hidden.css);

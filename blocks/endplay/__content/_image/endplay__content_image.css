@@ -1,5 +1,6 @@
 .endplay__content_image {
   height: 250px;
   width: auto;
-  margin: 0 auto;
+  display: block;
+  margin: 0px auto;
 }

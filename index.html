@@ -17,72 +17,83 @@
         <div class="game">
         
           <div class="start">
-            <img class="start__content_image"  src="./images/monster.png" alt="Monster">
-            <p class="start__content">Восстал монстр <br>Минг Бонг</p>
-            <p class="start__content">Храбрые борцы с монстрами спешат на помощь!</p>
-            <button class="start__btn" type="button">Начать борьбу!</button>
+            <div class="start__content">
+              <img class="start__content_image"  src="./images/monster.png" alt="Monster">
+              <p class="start__content_text">Восстал монстр <br>Минг Бонг</p>
+              <p class="start__content_text">Храбрые борцы с монстрами спешат на помощь!</p>
+              <button class="start__btn" type="button">Начать борьбу!</button>
+            </div>
           </div>
 
-          <div class="play" id="play__ming-bong">
-            <img class="play__content_image"  src="./images/health-flask.png" alt="Potion">
-            <p class="play__content">Магическое зелье Сардульи</p>
-            <form class="form" name="restoremingbonghealth">
-              <input
-                  type="number"
-                  name="mingbonghealthunits"
-                  placeholder="едениц"
-                  class="form__text form__number_mingbonghealthunits"
-                />
-              <input
-                value="Пополнить здоровье"
-                class="play__submit-btn play__submit-btn_mingbonghealthunits"
-                type="submit"
-              />
-            </form>
-          </div>
-
-          <div class="play" id="play__antimonster">
-            <img class="play__content_image"  src="./images/antimonster.png" alt="Antimonster">
-            <p class="play__content">Разрушительная сила Антимонстропушкаруса</p>
-            <form class="form" name="addantimonsterpowerdamage">
+          <div class="play play__ming-bong hidden">
+            <div class="play__content">
+              <img class="play__content_image"  src="./images/health-flask.png" alt="Potion">
+              <p class="play__content_text">Магическое зелье Сардульи</p>
+              <form class="form" name="restoremingbonghealth">
                 <input
                     type="number"
-                    name="antimonsterdamageunits"
-                    placeholder="еденицы"
-                    class="form__text form__number_antimonsterdamageunits"
+                    name="mingbonghealthunits"
+                    placeholder="едениц"
+                    class="form__text form__number_mingbonghealthunits"
                   />
                 <input
-                  value="Повысить силу"
-                  class="play__submit-btn play__submit-btn_antimonsterdamageunits"
+                  value="Пополнить здоровье"
+                  class="play__submit-btn play__submit-btn_mingbonghealthunits"
                   type="submit"
                 />
-            </form>
+              </form>
+            </div>
           </div>
 
-          <div class="endplay" id="ednplay__message_antimonster-win">
-              <div class="endplay__content endplay__content_antimonster-win">
-                <img class="endplay__content_image"  src="./images/warrior.png" alt="Warrior">
-                <p class="endplay__content_text" id="ednplay__message_antimonster-win">Борцы с монстрами завоевали победу за Х раундов</p>
-              </div>
-              <div class="endplay__content endplay__content_monster-win">
-                <img class="endplay__content_image"  src="./images/monster.png" alt="Monster">
-                <p class="endplay__content_text" id="ednplay__message_monster-win">Минг Бонг поработил мир за Х раундов</p>
-              </div>
-                <p class="endplay__stats_header">Антимонстропушкарус</p>
-              <ul class="endplay__stats">
-                <li class="endplay__stats_item">Макс урон: <div class="endplay__stats_units" id="ednplay__stats_antimonster_max-damage">123</div></li>
-              </ul>
-              <p class="endplay__stats_header">Здоровье Mонстра Минг Бонга</p>
-              <ul class="endplay__stats">
-                <li class="endplay__stats_item">Восстановлено: <div class="endplay__stats_units" id="ednplay__stats_monsterhealth-max-restored">123</div></li>
-                <li class="endplay__stats_item">Минимум: <div class="endplay__stats_units" id="ednplay__stats_monsterhealth-min_units">123</div></li>
-                <li class="endplay__stats_item">Максимум: <div class="endplay__stats_units" id="ednplay__stats_monsterhealth-max-units">123</div></li>
-              </ul>
-              <button class="endplay__startover_btn" type="button">Побороться сначала</button>
+          <div class="play play__antimonster hidden">
+            <div class="play__content">
+              <img class="play__content_image"  src="./images/antimonster.png" alt="Antimonster">
+              <p class="play__content_text">Разрушительная сила Антимонстропушкаруса</p>
+              <form class="form" name="addantimonsterpowerdamage">
+                  <input
+                      type="number"
+                      name="antimonsterdamageunits"
+                      placeholder="еденицы"
+                      class="form__text form__number_antimonsterdamageunits"
+                    />
+                  <input
+                    value="Нанести урон"
+                    class="play__submit-btn play__submit-btn_antimonsterdamageunits"
+                    type="submit"
+                  />
+              </form>
+              <p class="play__content_text-monsterhealth">Здоровье монстра <div class="play__content_text-monsterhealth monsterhealth-units"></div></p>
+            </div>
+          </div>
+
+          <div class="endplay hidden">
+
+            <div class="endplay__content endplay__content_antimonster-win hidden">
+              <img class="endplay__content_image"  src="./images/warrior.png" alt="Warrior">
+              <p class="endplay__content_text">Борцы с монстрами завоевали победу за <div class="endplay__content_text endplay__stats_rounds_antimonster"></div></p>
+            </div>
+
+            <div class="endplay__content endplay__content_monster-win hidden">
+              <img class="endplay__content_image"  src="./images/monster.png" alt="Monster">
+              <p class="endplay__content_text">Минг Бонг поработил мир за <div class="endplay__content_text endplay__stats_rounds_monster"></div></p>
+            </div>
+
+            <p class="endplay__stats_header">Антимонстропушкарус</p>
+            <ul class="endplay__stats">
+              <li class="endplay__stats_item">Макс нанесенный урон <div class="endplay__stats_units ednplay__stats_antimonster_max-damage"></div></li>
+            </ul>
+            <p class="endplay__stats_header">Mонстр Минг Бонг</p>
+            <ul class="endplay__stats">
+              <li class="endplay__stats_item">Всего было восстановлено <div class="endplay__stats_units ednplay__stats_monsterhealth-max-restored">123</div></li>
+              <li class="endplay__stats_item">Минимум здоровья <div class="endplay__stats_units ednplay__stats_monsterhealth-min_units">123</div></li>
+              <li class="endplay__stats_item">Максимум здоровья <div class="endplay__stats_units ednplay__stats_monsterhealth-max-units">123</div></li>
+            </ul>
+
+            <button class="endplay__startover_btn" type="button">Побороться сначала</button>
           </div>
 
           <footer class="footer">
-            <p class="footer__copyright">© Min Bong Game</p>
+            <p class="footer__copyright">©KapkaevaGames</p>
           </footer>
         </div>
       </main>

@@ -1,9 +1,8 @@
 .play__content {
   max-width: 640px;
   margin: 0 auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-size: 26px;
+  padding: 20px 0;
+  font-size: 30px;
   line-height: 1.2;
   text-align: center;
   color: bisque;
